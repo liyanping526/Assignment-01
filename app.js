@@ -1,3 +1,10 @@
+
+function setup(){
+	img = loadImage("sky1.png");
+}
+function draw(){
+	image(img, 0, 0, img.width/2, img.height/2);
+}
 /*
 	get the answer to the first question
 */
@@ -16,7 +23,7 @@ q1Btn.onclick = function() {
 		document.body.style.backgroundImage = "url(heights.jpg)"
 
 	} else if (answer == "Spiders") {
-		document.body.style.backgroundImage = "url(spides.jpg)"
+		document.body.style.backgroundImage = "url(spiders.jpg)"
 
 	} else if (answer == "Demons") {
 		document.body.style.backgroundImage = "url(demons.jpg)"
@@ -27,6 +34,23 @@ q1Btn.onclick = function() {
 	} 
 	
 };
+const q2Btn = document.getElementById('qTwoBtn');
+
+// when the user clicks, read their answer
+q2Btn.onclick = function() {
+	const answer = document.getElementById('spiders').value;
+
+	if (answer == "Yes") {
+		document.body.style.backgroundImage = "url(spiders.jpg)"
+
+	} else if (answer == "No") {
+		document.getElementById('qThree').style.display = "block"
+
+	} 
+	
+};
+
+
 
 
 
