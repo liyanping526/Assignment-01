@@ -1,23 +1,14 @@
-html { 
-  background: url(images/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 
 body{
 	/*width:80%;*/
 	margin:0 auto;
 	color:darkred;
 	text-align: center;
-	border:solid black 1px;
+
 	
 }
-/*#container{
-	background-color:pink;
-}
-*/p{
+p{
 	font-size:7em;
 }
 select {
@@ -31,6 +22,6 @@ select {
 	background-color:#33C3F0;
 	color:white;
 }
- #qThree {
+ #qThree, #qFour, #qFive, #qSix {
 	display: none;
 }
